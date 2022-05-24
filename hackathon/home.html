@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class="top-bar"></div> -->
+    <div class="main">
+        <!--WELCOME HEADER-->
+        <div class="pop"></div>
+        <div class="welcome-page">
+            
+            <div class="welcome-content">
+                <div class="welcome-title">create a <br>portfolio<br>in minutes!</div>
+                <div class="welcome-button"> 
+                    <button class="start"><a href="#down" class="down">start-building</a></button>
+                    
+                </div>
+            </div>
+
+            <div class="welcome-image"><img class="image-1" src="welcome.png" alt=""></div>
+
+        </div>
+
+        <!-- DETAILS-->
+        <div id="down"></div>
+        <h2 class="enter-details">enter your details..💻</h2>
+        <div class="details-main">
+
+            <div class="profile">
+
+                <div class="profile-picture" id="display-image"></div>
+
+                <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg" class="add-photo">
+            </div>
+            <div class="details"> 
+                <div class="names">
+                    <div class="first-name"><div class="first-name-text">first name</div><input class="fn" type="text" name="" id=""></div>
+                    <div class="last-name"><div class="last-name-text">last name</div><input class="ln" type="text" name="" id=""></div>
+                </div>
+                <div class="catchy-title"><div class="catchy-title-text">write a catchy title</div><input class="ct" type="text" name="" id=""></div>
+                <div class="bio"><div class="bio-text">your bio</div><textarea class="b" cols="30" rows="10" maxlength="200"></textarea></div>
+                
+            </div>
+
+        </div>
+        <h2 class="enter-details">location & links 📍</h2>
+
+        <div class="location">
+            <div class="location-details">
+                <div class="location-name"><div class="location-name-text">location</div><input class="lnn" type="text"></div>
+                <div class="email-name"><div class="email-name-text">email</div><input class="em" type="text"></div>
+                
+            </div>
+
+            <div class="location-picture">
+                <img class="image-location"src="location.png">
+            </div>
+        </div>
+        <h2 class="enter-details1">add your education and skills 🏫 </h2>
+        <div class="education">
+            <div class="university">
+                <div class="name-name"><div class="name-name-text">university name</div><input class="na" type="text"></div>
+                <div class="course-name"><div class="course-name-text">course</div><input class="co" type="text"></div>
+                <div class="year-name"><div class="year-name-text">graduation year</div><input class="ye" type="text"></div>
+            </div>
+
+
+
+            <div>
+                <div class="name-name"><div class="name-name-text">college name</div><input class="na1" type="text"></div>
+                <div class="course-name"><div class="course-name-text">course</div><input class="co1" type="text"></div>
+                <div class="year-name"><div class="year-name-text">completion</div><input class="ye1" type="text"></div>
+            </div>
+
+        </div>
+        <img class = "laptop" src="laptop.png" alt="">
+        <img class = "target" src="target.png" alt="">
+        <img class="board" src="board.png" alt="">
+        <h2 class="enter-details2">add upto 4 skills 💪</h2>
+
+        <div class = "skills">
+
+            
+
+                <div class="postion-1">
+                    <div class="name-name"><div class="name-name-text">skill 1</div><input class="skill1" type="text"></div>
+                    <div class="name-name"><div class="name-name-text">skill 2</div><input class="skill2" type="text"></div>
+                    
+                </div>
+                
+                <div class="position-2">
+                    <div class="name-name"><div class="name-name-text">skill 3</div><input class="skill3" type="text"></div>
+                    <div class="name-name"><div class="name-name-text">skill 4</div><input class="skill4" type="text"></div>
+                </div>
+            
+                
+
+
+
+            <div class="skill-image">
+                <img class="hurray-image" src="hurray.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="btn-center">
+            <button class="submit">SUBMIT DETAILS</a></button>
+        </div>
+
+
+        <div class="settings">
+            <h2 class="set">change settings</h2>
+            <div class="settings-1">
+                <div class="heading">
+                    <select class="heading1" onchange="getSelectValue();" id="Mobility">
+                        <option  selected="">header colour</option>
+                        <option value="1">light blue</option>
+                        <option value="2">cream</option>
+                        <option value="3">light-purple</option>
+                        <option value="4">greyish-black</option>
+                      </select>
+                </div>
+                <div class="background">
+                    <select class="background2" onchange="getSelectValue1();" id= "Mobility1">
+                        <option  selected="">background colour</option>
+                        <option value="1">white</option>
+                        <option value="2">light pink</option>
+                        <option value="3">cool green</option>
+                        <option value="4">grey</option>
+                      </select>
+                </div>
+                <div class="font"> 
+                    
+                        
+                        <select class="font3" onchange="myFunction(this);" id="Mobility2">
+                            <option  selected="">Font style</option>
+                            <option>Georgia</option>
+                            <option>Palatino Linotype</option>
+                            <option>Book Antiqua</option>
+                            <option>Times New Roman</option>
+                            <option>Arial</option>
+                            <option>Helvetica</option>
+                            <option>Impact</option>
+                            <option>Lucida Sans Unicode</option>
+                            <option>Tahoma</option>
+                          </select>
+                      
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="backgroud"></div>
+
+
+        <div class="font"></div>
+
+    </div>
+    <!--OUTPUT-->
+        <div class="final">
+
+            <div class="thumbnail"></div>
+            <div class="profile-output" id="display-image1"></div>
+            <!--about-->
+            <div class="about">
+               
+                    <div class="am">
+                    <h1 class="about-name"></h1>
+                    <h2 class="about-name2"></h2>
+                    </div>
+
+                    <div class="logo">
+                        <div class="loc-logo"><img class="apple-1"src="apple1.png" alt=""></div> <h3 class="ln-1"></h3>
+                        <div class="email-logo"><img class="apple-1"src="apple2.png" alt=""></div><h3 class="emai"></h3>
+                        
+                        
+                    </div>
+                    
+                
+            </div>
+            <hr>
+            <div class="bio-details">
+               
+                    <div class="a3"><h2 class="about-me3 amout-me-width">About</h2></div>
+                    <div class="a4"><h3 class="about-me4"></h3></div>
+                
+
+            </div>
+
+            <div class="bio-details1">
+               
+                <h2 class="edu">Education</h2>
+                <div class="education-1">
+                    <div class="one">
+                        <div class="scholar"><img class="scholar-1"src="scholar.png" alt=""></div>
+                    <div>
+                        <div><h2 class="university-output"></h2></div>
+                        <div><h2 class="university-course-output"></h2></div>
+                    </div>
+                </div>
+                <h3 class="university-year-output"></h3>
+                    
+                </div>
+
+
+                <div class="education-2">
+                    
+                        <div class="one">
+                            <div class="scholar"><img class="scholar-1"src="scholar.png" alt=""></div>
+                        <div>
+                            <div><h2 class="college-output"></h2></div>
+                            <div><h2 class="college-course-output"></h2></div>
+                        </div>
+                    </div>
+                    <h3 class="college-year-output"></h3>
+                        
+                    
+
+                </div>
+                
+            </div>
+
+            <!--SKILLS-->
+
+            <div class="skills-output">
+                <h2 class="skil">Skills</h2>
+                <div class="actual-skills">
+                    <div class="s1"><h3 class="s1-text"></h3></div>
+                <div class="s2"><h3 class="s2-text"></h3></div>
+                <div class="s3"><h3 class="s3-text"></h3></div>
+                <div class="s4"><h3 class="s4-text"></h3></div>
+                </div>
+            </div>
+
+        </div>
+<script src="script.js"></script>
+<div class="btn-center1">
+    <button class="submit1" onclick="myyFunction()">finish building</button>
+</div>
+</body>
+</html>
